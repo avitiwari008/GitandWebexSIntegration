@@ -23,9 +23,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: Notify dedicated teams channel
-        uses: avitiwari008/GitandWebexSIntegration@v1.3
+        uses: avitiwari008/GitandWebexSIntegration@v1
         with:
           github-token: ${{ github.token }} # this will use the runner's token.
           Cisco-webex-webhook-uri: ${{ secrets.GITWEBX }}
